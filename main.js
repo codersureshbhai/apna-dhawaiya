@@ -29,7 +29,9 @@ const signUp = () => {
             // Signed in 
            
             // After the signup logic is successful:
-window.location.href = "../main/index.html";
+window.location.href = "main/index.html";
+
+
             console.log(result)
             // ...
         })
@@ -48,8 +50,8 @@ const signIn = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((result) => {
             // Signed in 
-          window.location.href = "../main/index.html";
-            console.log(result)
+window.location.href = "main/index.html";       
+     console.log(result)
         })
         .catch((error) => {
             console.log(error.code);
